@@ -5,15 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>touge-night-riders</title>
+
+  <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">HOME</a></li>
-        <li><a href="{{site.baseurl}}/news.html">NEWS</a></li>
-      </ul>
-    </nav>
+    {% include nav.html %}
   </header>
 
 {{content}}
