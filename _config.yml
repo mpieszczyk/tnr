@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /touge-night-riders
+exclude: ['README.md']
