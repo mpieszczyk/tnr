@@ -1,6 +1,23 @@
-<nav>
-  <ul>
-    <li><a href="{{site.baseurl}}/index.html">HOME</a></li>
-    <li><a href="{{site.baseurl}}/news.html">NEWS</a></li>
-  </ul>
+<nav class="menu" id="mainNav">
+  <div class="container">
+    <a href="#" class="site-brand">
+      brand
+    </a>
+    <button type="button" data-target="#navMobile" class="menu-toggle" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      open/close
+    </button>
+    <div class="head-nav" id="navMobile">
+      <ul class="nav-list">
+        <li class="nav-list__elem">
+          <a {% if page.url == "/index.html" %} class="nav-list--active" {% endif %} href="{{site.baseurl}}/index.html">HOME</a>
+        </li>
+        <li class="nav-list__elem">
+          <a {% if page.url == "/blog.html" %} class="nav-list--active" {% endif %} href="{{site.baseurl}}/index.html"href="{{site.baseurl}}/blog.html">BLOG</a>
+        </li>
+        <li class="nav-list__elem">
+          <a {% if page.url == "/blog.html" %} class="nav-list--active" {% endif %} href="{{site.baseurl}}/contact.html">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
