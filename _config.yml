@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 baseurl: /touge-night-riders
 exclude: ['README.md']
 sass:
